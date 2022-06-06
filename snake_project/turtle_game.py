@@ -104,7 +104,7 @@ x_food = random.randint(-260,260)
 y_food = random.randint(-260,260)
 food.goto(x_food, y_food)
 
-with open("/Users/olalekanusman/Desktop/NGS/py/100 days/snake_project/highest_score.txt", "r") as f:
+with open("21/ping_pong_game/snake_project/highest_score.txt", "r") as f:
     highest = int(f.read())
 f.close()
 def game_over_display(score):
@@ -187,7 +187,7 @@ while playing:
         
     if score > highest:
         if playing == False:
-            with open("/Users/olalekanusman/Desktop/NGS/py/100 days/snake_project/highest_score.txt", "w") as f:
+            with open("21/ping_pong_game/snake_project/highest_score.txt", "w") as f:
                 f.write(str(score))
                 f.close()           
                 turtle.color("white")
